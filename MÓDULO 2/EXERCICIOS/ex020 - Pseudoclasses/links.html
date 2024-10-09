@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+          # = id
+          . = class
+          : = pseudo class
+          :: = pseudo elemento
+          > = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* A pseudo classe visited é quando a página ja foi visitada, neste caso a cor do link muda*/
+        a:visited{
+            color: darkred;
+        }
+
+        /*A pseudo classe Hover é quando passamos o link por cima*/
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        /*A pseudo classe active é quando clicamos, neste caso o link muda de cor*/
+        a:active{
+            color: yellow;
+        }
+        
+        /*Os pseudo Elementos são colocados usando duas vezes o :: enquanto a pseudo class uma única vez*/
+        /*O pseudo elemento abaixo after é usado para colocar algo DEPOIS*/
+        a::before{
+            content: '⭑';
+        }
+
+        a::after{
+            content: '[Link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

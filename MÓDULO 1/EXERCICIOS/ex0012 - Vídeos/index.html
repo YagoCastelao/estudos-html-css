@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor!</p>
+
+    <!--<video src="midia/meu-video.mp4" width="500" controls></video>-->
+
+    <!--A forma acima é a forma simples porém, precisamos colocar todos os tipos de vídeo, visto que, cada cliente que acessar o site vai vizualizar o vídeo de um navegador diferente, então temos que ter opções para todos!-->
+
+    <video controls width="500" poster="imagens/limoes-capa.png" autoplay loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.mkv" type="video/mkv">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <p>Seu navegador não têm compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <!--A ordem de vídeos acima influencia muito e ela é gerada por tamanho de arquivos, dos menores para os maiores!-->
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/o16by40NuhU?si=QI3_nm1R2CZw2tgD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <h1>Inserindo Vídeos do Vimeo</h1>
+    <iframe width="500" height="315" src="https://player.vimeo.com/video/365494052?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Animation Demo Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!--O melhor sempre é adicionar vídeos do Vimeo porque o Youtube sempre têm mais problemas com direiros autorais!-->
+
+</body>
+</html>
