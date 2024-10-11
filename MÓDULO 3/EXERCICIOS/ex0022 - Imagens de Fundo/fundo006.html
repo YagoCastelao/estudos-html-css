@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-        }
+            background-attachment: fixed;*/ /*mantem o fundo fixo, acompanhando o conteudo*/
+        
+        /*Short Hand - backGround
+            color > image > position > repeat > attachment */
+            background: black url('imagens/wallpaper002.jpg') center top no-repeat fixed;
+            background-size: cover;
+         }  
 
-/* Tamanho no comando background-size poder ser:
+        /* Tamanho no comando background-size poder ser:
         - auto: Navegador adapta a imagem ao tamanho da tela mas aparecen barra inferior com cor do fundo!
         - tamanho fixo em pixel ou em porcentagem da tela;
         -cover: Adapta o tamanho da imagem mas faz pequenos cortes!
         -contain: Mostrar 100% da imagem e tentar adaptar da tela sem cortar mas estica e achata a imagem! */
-
-
+        
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -35,6 +40,9 @@
 <body>
     <main>
         <h1>Teste imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta nobis cupiditate aliquid est ipsum assumenda illo laborum unde molestiae rerum dolore architecto numquam iste nesciunt, velit possimus deserunt veritatis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam sit esse quas ducimus. Ratione vel repellendus mollitia nostrum minima? Iusto aliquam voluptas exercitationem natus, itaque mollitia culpa laudantium nam blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae neque unde ut, reiciendis omnis fugiat odio nihil? Saepe ad quam ex blanditiis vitae, deserunt provident dignissimos ea, nemo optio in.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta nobis cupiditate aliquid est ipsum assumenda illo laborum unde molestiae rerum dolore architecto numquam iste nesciunt, velit possimus deserunt veritatis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam sit esse quas ducimus. Ratione vel repellendus mollitia nostrum minima? Iusto aliquam voluptas exercitationem natus, itaque mollitia culpa laudantium nam blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae neque unde ut, reiciendis omnis fugiat odio nihil? Saepe ad quam ex blanditiis vitae, deserunt provident dignissimos ea, nemo optio in.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta nobis cupiditate aliquid est ipsum assumenda illo laborum unde molestiae rerum dolore architecto numquam iste nesciunt, velit possimus deserunt veritatis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam sit esse quas ducimus. Ratione vel repellendus mollitia nostrum minima? Iusto aliquam voluptas exercitationem natus, itaque mollitia culpa laudantium nam blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae neque unde ut, reiciendis omnis fugiat odio nihil? Saepe ad quam ex blanditiis vitae, deserunt provident dignissimos ea, nemo optio in.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta nobis cupiditate aliquid est ipsum assumenda illo laborum unde molestiae rerum dolore architecto numquam iste nesciunt, velit possimus deserunt veritatis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam sit esse quas ducimus. Ratione vel repellendus mollitia nostrum minima? Iusto aliquam voluptas exercitationem natus, itaque mollitia culpa laudantium nam blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae neque unde ut, reiciendis omnis fugiat odio nihil? Saepe ad quam ex blanditiis vitae, deserunt provident dignissimos ea, nemo optio in.</p>
     </main>
 </body>
