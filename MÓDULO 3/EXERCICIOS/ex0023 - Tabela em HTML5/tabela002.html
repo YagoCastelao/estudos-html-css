@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) /*USADO PARA COLOCAR O EFEITO ZEBRADO, O 2N SERVE PARA A CADA DUAS LINHAS MUDAR O BACKGROUND COLOR */ {
+            background-color: lightgray;
+        }
+
+        /* As configurações abaixo são usadas quando o site tem um fundo de uma cor que não é branco e queremos deixar a tabla mais visivel! Neste caso vamos aplicar diferentes cores em linhas Pares(EVEN) e linhas Impares(ODD):
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
+        */
+            
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        MUITO IMPORTANTE USAR O SCOPE, para todos os TH da tabela!
+            CAPTION = LEGENDA DA TABELA
+            TABLE
+                THEAD
+                    Posso ter: TR, TD, TH
+                TBODY
+                    Posso ter: TR, TD, TH
+                TFOOT
+                    Posso ter: TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 400px;">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.859.521</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.526.845</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>83.254.236</strong></td>
+        </tfoot>
+    </table>
+
+</body>
+</html>
